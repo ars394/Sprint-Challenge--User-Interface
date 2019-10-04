@@ -51,7 +51,7 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html, body, button {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -71,6 +71,7 @@ p {
     margin: 0 auto;
 }
 
+/* START HERE */
 /* header */
 
 header {
@@ -107,20 +108,7 @@ header .logo {
     margin: 40px 0px 25px 0px;
 }
 
-button {
-    padding: 8px 32px;
-    border: 1px solid black;
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
-    margin: -20px 0px 20px 20px;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-}
+/* about header */
 
 .container-about-page h2 {
     margin: 10px 20px 15px 20px;
@@ -129,19 +117,21 @@ button:hover {
     margin: 10px 20px 20px 20px;   
 }
 
+/*main content boxes */
+
 .boxes {
     border-top: 1px dashed black;
-    margin: 10px 0px;
-    padding: 30px 10px;
+    padding: 30px 0px;
     display: flex;
-    flex-flow: row wrap
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .box {
     border-bottom: 1px dashed black;
-    margin: 10px 0px;
-    padding: 20px 10px;
-    width: 46%;
+    margin: 0px 0px;
+    padding: 20px 0px;
+    width: 47%;
 }
 
 .box h2 {
@@ -152,7 +142,27 @@ button:hover {
     display: flex;
 }
 
+button {
+    padding: 12px 30px;
+    border: 2px solid black;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin: 0px 0px 0px 20px;
+    line-height: 1.4;
+}
 
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* work-together */
+
+.work-together p {
+    margin-bottom: 40px;
+}
 /*footer*/
 
 footer {
@@ -173,7 +183,7 @@ footer nav a {
   font-size: 14px;
   color: white;
   text-decoration: none;
-  margin: 0px 40px;
+  margin: 0px 35px;
 }
 
 footer nav a:hover {
